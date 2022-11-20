@@ -25,12 +25,21 @@ print(new_list)
 #1.use input to get user number
 #2.use a loop to compare user number and the list
 
-#Getting user number
+#Getting user number (WRONG WAY)
+#another_number = []
+#user_number = int(input("Please enter any number: "))
+#number1 = list(user_number)
+#for another_number:
+#    for user_number < a:
+#        another_number.append(a)
+#        print(another_number)
+#print(another_number)
+
 another_number = []
 user_number = int(input("Please enter any number: "))
-#number1 = list(user_number)
-for another_number:
-    for user_number < a:
-        another_number.append(a)
-        print(another_number)
+for item in a:
+    if item < user_number:
+        another_number.append(item)
+        #print(another_number)
 print(another_number)
+    
