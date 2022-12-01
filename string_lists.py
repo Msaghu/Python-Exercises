@@ -9,13 +9,15 @@
 
 #Getting user input
 user_input = input("Please enter your favourite word: ")
-print(user_input)
+user_input1 = list(user_input)
+print(user_input1)
+print(type(user_input1))
 
 #Looping through the user-input to find if its a palindrome
-for item in user_input:
-    print(item)
-    if item == user_input.reverse():
-        print(f"{user_input} is a palindrome")
-    elif item != user_input.reverse:
-        print(f"{user_input} is just a regular word")
+palindrome = list(reversed(user_input1))
+print(palindrome)
+if user_input1 == palindrome:
+    print(f"{user_input.title()} is a palindrome")
+else:
+    print(f"{user_input.title()} is just a regular word")
     
